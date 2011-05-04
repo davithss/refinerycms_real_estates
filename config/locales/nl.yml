@@ -1,0 +1,40 @@
+--- 
+nl: 
+  plugins: 
+    categories: 
+      title: Categories
+    real_estates: 
+      title: Real Estates
+  admin: 
+    categories: 
+      actions: 
+        create_new: Maak een nieuwe Category
+        reorder: Wijzig de volgorde van de Categories
+        reorder_done: Klaar met het wijzingen van de volgorde van de Categories
+      records: 
+        title: Categories
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Categories. Druk op 'Maak een nieuwe Category' om de eerste aan te maken.
+      category: 
+        view_live_html: Bekijk deze category op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze category
+        delete: Verwijder deze category voor eeuwig
+    real_estates: 
+      actions: 
+        create_new: Maak een nieuwe Real Estate
+        reorder: Wijzig de volgorde van de Real Estates
+        reorder_done: Klaar met het wijzingen van de volgorde van de Real Estates
+      records: 
+        title: Real Estates
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Real Estates. Druk op 'Maak een nieuwe Real Estate' om de eerste aan te maken.
+      real_estate: 
+        view_live_html: Bekijk deze real estate op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze real estate
+        delete: Verwijder deze real estate voor eeuwig
+  categories: 
+    show: 
+      other: Andere Categories
+  real_estates: 
+    show: 
+      other: Andere Real Estates

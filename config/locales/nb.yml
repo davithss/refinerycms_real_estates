@@ -1,0 +1,40 @@
+--- 
+nb: 
+  plugins: 
+    categories: 
+      title: Categories
+    real_estates: 
+      title: Real Estates
+  admin: 
+    categories: 
+      actions: 
+        create_new: Lag en ny Category
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Categories"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Categories"
+      records: 
+        title: Categories
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Categories enda. Klikk p\xC3\xA5 \"Lag en ny Category\" for \xC3\xA5 legge til din f\xC3\xB8rste category."
+      category: 
+        view_live_html: "Vis hvordan denne category ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne category
+        delete: Fjern denne category permanent
+    real_estates: 
+      actions: 
+        create_new: Lag en ny Real Estate
+        reorder: "Endre rekkef\xC3\xB8lgen p\xC3\xA5 Real Estates"
+        reorder_done: "Ferdig \xC3\xA5 endre rekkef\xC3\xB8lgen Real Estates"
+      records: 
+        title: Real Estates
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: "Det er ingen Real Estates enda. Klikk p\xC3\xA5 \"Lag en ny Real Estate\" for \xC3\xA5 legge til din f\xC3\xB8rste real estate."
+      real_estate: 
+        view_live_html: "Vis hvordan denne real estate ser ut offentlig <br/><em>(\xC3\xA5pner i et nytt vindu)</em>"
+        edit: Rediger denne real estate
+        delete: Fjern denne real estate permanent
+  categories: 
+    show: 
+      other: Andre Categories
+  real_estates: 
+    show: 
+      other: Andre Real Estates

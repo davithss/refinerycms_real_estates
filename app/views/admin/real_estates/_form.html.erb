@@ -1,0 +1,72 @@
+<%= form_for [:admin, @real_estate] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @real_estate,
+          :include_object_name => true
+        } %>
+
+
+<div id= "realestate_options">
+ <div class="column_left">
+	<div class="field">
+	<%= f.label :title -%>
+	<%= f.text_field :title, :size => "50"  -%>
+  	</div>
+	<div class="field">
+	 <%= f.label :address -%>
+     <%= f.text_area :address, :cols => "50", :rows => "6" -%>
+  	</div>
+	
+ </div>
+ <div class="column_right">
+	<div class="field">
+    <%= f.label :city -%>
+    <%= f.text_field :city , :size => "20" -%>
+  	</div>
+	<div class="field">
+    <%= f.label :state -%>
+    <%= f.text_field :state , :size => "20" -%>
+  	</div>
+	<div class="field">
+    <%= f.label :price -%>
+    <%= f.text_field :price , :size => "20"-%>
+ 	</div>
+	<div class="field">
+    <%= f.label :status -%>
+    <%= f.check_box :status -%>
+  	</div>
+ </div>
+</div>
+  <div class='field'>
+    <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
+      <ul id='page_parts'>
+        <% [:description].each_with_index do |part, part_index| %>
+          <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
+            <%= link_to part.to_s.titleize, "##{part}" %>
+          </li>
+        <% end %>
+      </ul>
+
+      <div id='page_part_editors'>
+        <% [:description].each do |part| %>
+          <div class='page_part' id='<%= part %>'>
+            <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.real_estates.real_estate'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @real_estate.title)
+              } %>
+<% end -%>
+<% content_for :javascripts do %>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end %>

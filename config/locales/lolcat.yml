@@ -1,0 +1,44 @@
+--- 
+lolcat: 
+  shared: 
+    admin: 
+      image_picker: 
+        image: IMAGE
+  plugins: 
+    categories: 
+      title: Categories
+    real_estates: 
+      title: Real Estates
+  admin: 
+    categories: 
+      actions: 
+        create_new: CREATE NEW Category
+        reorder: REORDR Categories
+        reorder_done: DUN REORDERIN Categories
+      records: 
+        title: Categories
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Categories YET. CLICK "CREATE NEW Category" 2 ADD UR FURST category.
+      category: 
+        view_live_html: VIEW DIS category LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS category
+        delete: REMOOV DIS category FOREVR
+    real_estates: 
+      actions: 
+        create_new: CREATE NEW Real Estate
+        reorder: REORDR Real Estates
+        reorder_done: DUN REORDERIN Real Estates
+      records: 
+        title: Real Estates
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Real Estates YET. CLICK "CREATE NEW Real Estate" 2 ADD UR FURST real estate.
+      real_estate: 
+        view_live_html: VIEW DIS real estate LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS real estate
+        delete: REMOOV DIS real estate FOREVR
+  categories: 
+    show: 
+      other: OTHR Categories
+  real_estates: 
+    show: 
+      other: OTHR Real Estates

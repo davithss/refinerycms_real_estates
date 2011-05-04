@@ -1,0 +1,25 @@
+pt-BR:
+  shared:
+    admin:
+      image_picker:
+        image: Imagem
+  plugins:
+    real_estates:
+      title: Imobiliária
+  admin:
+    real_estates:
+      actions:
+        create_new: Adicionar um novo imóvel
+        reorder: Reordenar imóvel
+        reorder_done: Imóveis reordenado
+      records:
+        title: Imobiliária
+        sorry_no_results: Desculpe! Nenhum resultado encontrado.
+        no_items_yet: Você não tem nenhum imóvel cadastrado até o momento. Clique em "Adicionar um novo imóvel".
+      real_estate:
+        view_live_html: Visualize esta página <br/><em>(abre em uma nova janela)</em>
+        edit: Edite este imóvel
+        delete: Deletar imóvel
+  real_estates:
+    show:
+      other: Outros Imóveis

@@ -1,0 +1,28 @@
+<ul>
+  <% if Admin::CategoriesController.searchable? %>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                  :locals => {
+                    :url => admin_categories_url
+                  } %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), new_admin_category_url,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? and Admin::CategoriesController.sortable? and Category.count > 1 %>
+  <li>
+    <%= link_to t('.reorder', :what => "Categories"),
+                 admin_categories_url,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Categories"),
+                 admin_categories_url,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

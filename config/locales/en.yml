@@ -1,0 +1,44 @@
+--- 
+en: 
+  shared: 
+    admin: 
+      image_picker: 
+        image: image
+  plugins: 
+    categories: 
+      title: Categories
+    real_estates: 
+      title: Real Estates
+  admin: 
+    categories: 
+      actions: 
+        create_new: Add New Category
+        reorder: Reorder Categories
+        reorder_done: Done Reordering Categories
+      records: 
+        title: Categories
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Categories yet. Click "Add New Category" to add your first category.
+      category: 
+        view_live_html: View this category live <br/><em>(opens in a new window)</em>
+        edit: Edit this category
+        delete: Remove this category forever
+    real_estates: 
+      actions: 
+        create_new: Add New Real Estate
+        reorder: Reorder Real Estates
+        reorder_done: Done Reordering Real Estates
+      records: 
+        title: Real Estates
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Real Estates yet. Click "Add New Real Estate" to add your first real estate.
+      real_estate: 
+        view_live_html: View this real estate live <br/><em>(opens in a new window)</em>
+        edit: Edit this real estate
+        delete: Remove this real estate forever
+  categories: 
+    show: 
+      other: Other Categories
+  real_estates: 
+    show: 
+      other: Other Real Estates

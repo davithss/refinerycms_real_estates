@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="real_estates">
+    <% @real_estates.each do |real_estate| %>
+      <li>
+        <%= link_to real_estate.title, real_estate_url(real_estate) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

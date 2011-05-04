@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @real_estate.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Informações</h1>
+    <p>
+      <%=raw @real_estate.title %> | <%=raw @real_estate.address %>
+    </p>
+	<p>
+	  <%=raw @real_estate.city %> | <%=raw @real_estate.state %>
+	</p>
+	<p><%=raw @real_estate.price %> | <%=raw @real_estate.status %> </p> 
+  </section>
+  
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @real_estate.description %>
+    </p>
+  </section>
+
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="real_estates">
+      <% @real_estates.each do |real_estate| %>
+        <li>
+          <%= link_to real_estate.title, real_estate_url(real_estate) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
