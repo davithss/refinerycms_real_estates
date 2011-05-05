@@ -4,10 +4,25 @@ pt-BR:
       image_picker:
         image: Imagem
   plugins:
+    categories: 
+      title: Categorias
     real_estates:
-      title: Imobiliária
-  admin:
-    real_estates:
+      title: Imóveis
+  admin:     
+  categories: 
+      actions:
+        create_new: Adicionar uma nova categoria
+        reorder: Reordenar categoria
+        reorder_done: Categoria reordenada
+      records:
+        title: Categoria
+        sorry_no_results: Desculpe! Nenhum resultado encontrado.
+        no_items_yet: Você não tem nenhuma categoria cadastrada até o momento. Clique em "Adicionar uma nova categoria".
+      category:
+        view_live_html: Visualize esta página <br/><em>(abre em uma nova janela)</em>
+        edit: Edite esta categoria
+        delete: Deletar categoria           
+  real_estates:
       actions:
         create_new: Adicionar um novo imóvel
         reorder: Reordenar imóvel
@@ -19,7 +34,10 @@ pt-BR:
       real_estate:
         view_live_html: Visualize esta página <br/><em>(abre em uma nova janela)</em>
         edit: Edite este imóvel
-        delete: Deletar imóvel
+        delete: Deletar imóvel       
+  categories: 
+      show: 
+        other: Outras categorias
   real_estates:
     show:
       other: Outros Imóveis
