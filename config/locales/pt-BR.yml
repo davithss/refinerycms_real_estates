@@ -36,8 +36,8 @@ pt-BR:
         edit: Edite este imóvel
         delete: Deletar imóvel       
   categories: 
-      show: 
-        other: Outras categorias
+    show: 
+      other: Outras categorias
   real_estates:
     show:
       other: Outros Imóveis
