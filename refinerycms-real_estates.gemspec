@@ -1,5 +1,8 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
+  s.author            = 'Davi Thiesse A. S. Fontes'
+  s.email             = 'davithss@gmail.com'
+  s.homepage          = 'https://github.com/davithss/refinerycms_real_estates'
   s.name              = 'refinerycms-real_estates'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Real Estates engine for Refinery CMS'
