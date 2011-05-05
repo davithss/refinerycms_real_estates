@@ -1,4 +1,5 @@
 require 'refinerycms-base'
+require File.expand_path('../refinerycms-categories', __FILE__)
 
 module Refinery
   module RealEstates
