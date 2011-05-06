@@ -1,43 +1,44 @@
-pt-BR:
-  shared:
-    admin:
-      image_picker:
-        image: Imagem
-  plugins:
+--- 
+"pt-BR": 
+  shared: 
+    admin: 
+      image_picker: 
+        image: imagem
+  plugins: 
     categories: 
       title: Categorias
-    real_estates:
+    real_estates: 
       title: Imóveis
-  admin:     
-  categories: 
-      actions:
+  admin: 
+    categories: 
+      actions: 
         create_new: Adicionar uma nova categoria
-        reorder: Reordenar categoria
-        reorder_done: Categoria reordenada
-      records:
-        title: Categoria
-        sorry_no_results: Desculpe! Nenhum resultado encontrado.
-        no_items_yet: Você não tem nenhuma categoria cadastrada até o momento. Clique em "Adicionar uma nova categoria".
-      category:
-        view_live_html: Visualize esta página <br/><em>(abre em uma nova janela)</em>
-        edit: Edite esta categoria
-        delete: Deletar categoria           
-  real_estates:
-      actions:
+        reorder: Reordenar Categorias
+        reorder_done: Categorias reordenada
+      records: 
+        title: Categorias
+        sorry_no_results: Desculpe! Nenhum resultado foi encontrado.
+        no_items_yet: Nenhuma categoria cadastrada. Clique em "Adicionar nova categoria" para adicionar sua primeira categoria.
+      category: 
+        view_live_html: Visualizar categoria na página pública <br/><em>(abre em uma nova janela)</em>
+        edit: Editar esta categoria
+        delete: Remover esta categoria
+    real_estates: 
+      actions: 
         create_new: Adicionar um novo imóvel
-        reorder: Reordenar imóvel
-        reorder_done: Imóveis reordenado
-      records:
-        title: Imobiliária
-        sorry_no_results: Desculpe! Nenhum resultado encontrado.
-        no_items_yet: Você não tem nenhum imóvel cadastrado até o momento. Clique em "Adicionar um novo imóvel".
-      real_estate:
-        view_live_html: Visualize esta página <br/><em>(abre em uma nova janela)</em>
-        edit: Edite este imóvel
-        delete: Deletar imóvel       
+        reorder: Reordenar Imóveis
+        reorder_done: Imóveis reordenados
+      records: 
+        title: Imóveis
+        sorry_no_results: Desculpe! Nenhum resultado foi encontrado.
+        no_items_yet: Nenhum imóvel cadastrado. Clique em "Adicionar um novo imóvel" para adicionar seu primeiro imóvel.
+      real_estate: 
+        view_live_html: Vsualizar imóvel na página pública <br/><em>(abre em uma nova janela)</em>
+        edit: Editar este imóvel
+        delete: Remover este imóvel
   categories: 
     show: 
       other: Outras categorias
-  real_estates:
-    show:
-      other: Outros Imóveis
+  real_estates: 
+    show: 
+      other: Outros imóveis
