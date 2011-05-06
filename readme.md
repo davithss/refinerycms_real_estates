@@ -2,7 +2,7 @@
 
 How to setup application
 
-You can run the this application running the following commands:
+You can run this application running the following commands:
 
 git clone git://github.com/davithss/refinerycms_real_estates.git
 
