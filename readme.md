@@ -1,10 +1,14 @@
 # Real Estates engine for Refinery CMS.
 
-## How to build this engine as a gem
+How to setup application
 
-    cd vendor/engines/real_estates
-    gem build refinerycms-real_estates.gempspec
-    gem install refinerycms-real_estates.gem
-    
-    # Sign up for a http://rubygems.org/ account and publish the gem
-    gem push refinerycms-real_estates.gem
+You can run the this application running the following commands:
+
+  $ git clone git://github.com/davithss/refinerycms_real_estates.git
+  $ bundle install
+  $ rake db:migrate
+  $ rails server
+
+How to collaborate
+
+If you would collaborate, you can create a fork, apply the modification and submit a pull request :)
