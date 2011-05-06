@@ -12,10 +12,7 @@
     <%= link_to t('.create_new'), new_admin_real_estate_url,
                  :class => "add_icon" %>
   </li>
-  <li>
-    <%= link_to t('.create_new'), new_admin_category_url,
-                 :class => "add_icon" %>
-  </li>
+ 
 <% if !searching? and Admin::RealEstatesController.sortable? and RealEstate.count > 1 %>
   <li>
     <%= link_to t('.reorder', :what => "Real Estates"),
