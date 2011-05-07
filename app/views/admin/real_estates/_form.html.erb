@@ -17,7 +17,7 @@
   	</div>
 	
  </div>
- <div class="column_right">
+  <div class="column_right">
 	<div class="field">
     <%= f.label :city -%>
     <%= f.text_field :city , :size => "20" -%>
@@ -30,14 +30,14 @@
     <%= f.label :price -%>
     <%= f.text_field :price , :size => "20"-%>
  	</div>
-    <div class="field">
-	 <p>Category <br>
-      <% @real_estates_categories.each do |c| %>
-       <ul> <%= check_box_tag "real_estate[category_ids][]", c.id, @real_estate.categories.include?(c) %>
-        <%= c.title %><br/></ul>
+    <div class="field"> 
+	 <p>Category</p>     
+		<% @real_estates_categories.each do |c| %>
+        <%= check_box_tag "real_estate[category_ids][]", c.id, @real_estate.categories.include?(c) %>
+        <%= c.title %><br/>
       <% end %>
-	 </p>
     </div>
+ </div>
 </div>
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
