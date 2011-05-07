@@ -1,4 +1,4 @@
-# Real Estates engine for Refinery CMS.
+# Real Estate engine for Refinery CMS. (on developing)
 
 How to setup application
 
