@@ -11,11 +11,19 @@
 	<p>
 	  <%=raw @real_estate.city %> | <%=raw @real_estate.state %>
 	</p>
-	<p><%=raw @real_estate.price %> | <%=raw @real_estate.status %> </p> 
+	<p><%=raw @real_estate.price %>  </p>
+	<p>Categoria</p>     
+		<ul id="categories">
+	        <li>
+	          	<% @real_estates_categories.each do |c| %>
+				  <%= c.title %>
+				<% end %>
+	        </li>
+	    </ul>
   </section>
   
   <section>
-    <h1>Description</h1>
+    <h1>Descrição</h1>
     <p>
       <%=raw @real_estate.description %>
     </p>
