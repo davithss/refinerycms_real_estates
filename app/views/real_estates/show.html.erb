@@ -13,13 +13,13 @@
 	</p>
 	<p><%=raw @real_estate.price %>  </p>
 	<p>Categoria</p>     
-		<ul id="categories">
-	        <li>
-	          	<% @real_estates_categories.each do |c| %>
-				  <%= c.title %>
-				<% end %>
-	        </li>
-	    </ul>
+	<% if (categories = @real_estate.categories).any? %>
+        <aside class='filed_in'>
+          <% categories.each do |category| %>
+            <%=raw category.title -%>
+          <% end %> 
+        </aside>
+      <% end %>
   </section>
   
   <section>
