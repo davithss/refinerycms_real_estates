@@ -14,4 +14,4 @@ rails server
 
 How to collaborate
 
-If you would collaborate, you can create a fork, apply the modification and submit a pull request :) 
+If you would collaborate, you can create a fork, apply the modification and submit a pull request :)
